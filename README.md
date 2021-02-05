@@ -16,19 +16,19 @@ N is the sum of all n's of a document
 
 ### Commands:
 
-###Command to execute first map-reduce job
+**Command to execute first map-reduce job**
 
 hadoop jar $HADOOP/contrib/streaming/hadoop-streaming-1.2.1.jar -input /home/d/dx/dxp2106/project5/*.txt -output /home/d/dx/dxp2106/output1 -mapper /home/d/dx/dxp2106/mapper1.py -reducer /home/d/dx/dxp2106/reducer1.py
 
-###Command to execute second map-reduce job
+**Command to execute second map-reduce job**
 
 hadoop jar $HADOOP/contrib/streaming/hadoop-streaming-1.2.1.jar -input /home/d/dx/dxp2106/output1/part-00000 -output /home/d/dx/dxp2106/output2 -mapper /home/d/dx/dxp2106/mapper2.py -reducer /home/d/dx/dxp2106/reducer2.py
 
-###Command to execute third map-reduce job
+**Command to execute third map-reduce job**
 
 hadoop jar $HADOOP/contrib/streaming/hadoop-streaming-1.2.1.jar -input /home/d/dx/dxp2106/output2/part-00000 -output /home/d/dx/dxp2106/output3 -mapper /home/d/dx/dxp2106/mapper3.py -reducer /home/d/dx/dxp2106/reducer3.py
 
-###Command to execute fourth map-reduce job
+**Command to execute fourth map-reduce job**
 
 hadoop jar $HADOOP/contrib/streaming/hadoop-streaming-1.2.1.jar -numReduceTasks 0 -input /home/d/dx/dxp2106/output3/part-00000 -output /home/d/dx/dxp2106/output4 -mapper /home/d/dx/dxp2106/mapper4.py
 
