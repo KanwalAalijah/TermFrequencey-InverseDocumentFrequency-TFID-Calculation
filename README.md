@@ -18,3 +18,5 @@ N is the sum of all n's of a document
 1) https://janav.wordpress.com/2013/10/27/tf-idf-and-cosine-similarity/  
 2) https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Term_frequency
 3) https://en.wikipedia.org/wiki/Apache_Hadoop
+4) https://download.atlantis-press.com/article/2562.pdf
+
